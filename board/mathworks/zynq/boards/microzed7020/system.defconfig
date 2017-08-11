@@ -1,0 +1,5 @@
+BR2_TOOLCHAIN_EXTERNAL_PATH="/opt/Xilinx/SDK/2016.2/gnu/arm/lin"
+BR2_LINUX_KERNEL_CUSTOM_REPO_URL="https://github.com/htkimhrl/xilinx-linux.git"
+BR2_LINUX_KERNEL_CUSTOM_REPO_VERSION="for-hrl-2017-08-08"
+BR2_TARGET_UBOOT_CUSTOM_REPO_URL="https://github.com/htkimhrl/xilinx-uboot.git"
+BR2_TARGET_UBOOT_CUSTOM_REPO_VERSION="for-hrl-2017-08-08"

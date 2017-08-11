@@ -1,0 +1,16 @@
+<board name="microzed7020" platform="zynq">
+    <default>
+         <app name="default">
+	 </app>
+		<fsbl dir="handoff"/>
+		<sdcard dir ="./sdcard"/>
+		<board_dir dir = "./"/>
+		<br2_config file = "./system.defconfig"/>
+    </default>
+    <image name="HRL_system">
+        <app name="CAN">
+    		<dts file ="can.dts"/>
+		<bit file ="HRL_system.bit"/>
+        </app>
+    </image>
+</board>
