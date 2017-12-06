@@ -1,0 +1,7 @@
+config BR2_PACKAGE_HELLO_HRL
+	bool "Hello_HRL"
+	help
+	  HRL Hello World Test Module with Buildroot 
+
+	  https://
+

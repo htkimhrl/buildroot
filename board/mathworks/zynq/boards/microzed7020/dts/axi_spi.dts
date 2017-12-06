@@ -1,0 +1,19 @@
+#include "base.dtsi"
+
+&spi0{
+	status = "okay";
+	num-cs = <3>; 
+	is-decoded-cs = <0>;	
+	
+	adxl345@0x00{
+		compatible = "adi,adxl34x";
+		reg = <1>;
+		spi-max-frequency = <1000000>;
+		spi-cpha;
+		spi-cpol; 
+		interrupts = <0 29 4>; 
+
+	};
+	
+};
+

@@ -2,14 +2,30 @@
     <default>
          <app name="default">
 	 </app>
-		<fsbl dir="handoff"/>
+		<fsbl dir="handoff/RS232_CAN_FMC"/>
 		<board_dir dir = "./"/>
 		<br2_config file = "./system.defconfig"/>
     </default>
-    <image name="HRL_system">
+    <image name="SYSTEM">
+	<app name="RS232_CAN_ON_FMC"> 
+		<dts file ="RS232_CAN.dts"/>
+		<bit file ="RS232_CAN_FMC.bit"/>
+	</app>
+	<app name="RS232_CAN"> 
+		<dts file ="RS232_CAN.dts"/>
+		<bit file ="RS232_CAN.bit"/>
+	</app>
+	<app name="RS232"> 
+		<dts file ="RS232.dts"/>
+		<bit file ="RS232.bit"/>	
+	</app>
+        <app name="SPI">
+    		<dts file ="xps_spi.dts"/>
+		<bit file ="SPI.bit"/>
+        </app>
         <app name="CAN">
     		<dts file ="can.dts"/>
-		<bit file ="HRL_system.bit"/>
+		<bit file ="CAN.bit"/>
         </app>
     </image>
 </board>

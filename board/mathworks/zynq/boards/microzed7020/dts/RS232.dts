@@ -1,0 +1,12 @@
+#include "base.dtsi"
+
+&uart0{
+	status = "okay";
+};
+
+&aliases { 
+	serial0 = &uart1;
+	serial1 = &uart0;
+};
+
+
